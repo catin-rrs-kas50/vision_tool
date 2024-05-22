@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}Vision{% endblock %}
+
+{% block content %}
+<h1>Choose an Option</h1>
+<form action="#">
+    <link rel="stylesheet" href="{% static'/css/vision.css'}">
+    <label for="options">Select an option:</label>
+    <select id="options" name="options">
+        <option value="option1">Option 1</option>
+        <option value="option2" selected>Option 2</option>
+        <option value="option3" disabled>Option 3 (Unavailable)</option>
+        <option value="option4">Option 4</option>
+    </select>
+    <br><br>
+    <input type="submit" value="Submit">
+</form>
+{% endblock %}
